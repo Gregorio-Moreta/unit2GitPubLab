@@ -12,5 +12,14 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gregorio-Moreta/unit2GitPubLab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gregorio-Moreta/unit2GitPubLab/issues"
+  },
+  "homepage": "https://github.com/Gregorio-Moreta/unit2GitPubLab#readme"
 }
