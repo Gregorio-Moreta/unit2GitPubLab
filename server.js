@@ -10,7 +10,7 @@ app.get('/homePage', (req, res) => {
 })
 //  Create a get route /drinksthat will res.send(drinks), which will display your drinks data as json in the browser
 app.get('/drinks', (req, res) => {
-    res.send(drinks)
+    res.render('drinks_index.ejs')
 })
 //  Set the server to listen at port 7000 
 app.listen(7000, () => {
