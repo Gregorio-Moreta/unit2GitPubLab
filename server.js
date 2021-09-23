@@ -8,11 +8,15 @@ const drinks = require ("./models/drinks")
 app.get('/homePage', (req, res) => {
     res.send('Welcome to the Gitpub App!')
 })
-//  Create a get route /drinksthat will res.send(drinks), which will display your drinks data as json in the browser
+//  Create a get route /drinks that will res.send(drinks), which will display your drinks data as json in the browser
 app.get('/drinks', (req, res) => {
     res.render('drinks_index.ejs', {allDrinks: drinks} )
 })
+//  Create a get route /drinks/:id
+app.get('/drinks/:id', (req, res) => {
+    res.send(req.params.id)
+})
 //  Set the server to listen at port 7000 
-app.listen(7000, () => {
+app.listen(8000, () => {
     console.log('listening');
 })
